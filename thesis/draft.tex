@@ -159,6 +159,124 @@ g_{\mu\nu} \to \Omega^2 g_{\mu\nu}
 so the late state can serve as an effective new initial condition.
 
 % =========================
+\section{Topology Persistence Dynamics}
+
+We formalize persistent curvature modes as slow variables in cosmological evolution.
+
+Let $\mathcal{T}$ denote the topological constraint field derived from primordial curvature.
+We model its evolution as
+
+\[
+\frac{\partial \mathcal{T}}{\partial t}
+=
+-\lambda \mathcal{D}[\mathcal{T}] + \eta
+\]
+
+where
+
+\begin{itemize}
+\item $\mathcal{D}$ represents dissipative baryonic backreaction
+\item $\lambda \ll 1$ expresses persistence
+\item $\eta$ encodes stochastic quantum fluctuations
+\end{itemize}
+
+In the persistence limit $\lambda \to 0$, topology behaves as an effective conserved quantity across cosmic epochs.
+
+% =========================
+\section{Horizon Archive Formalism}
+
+We treat the event horizon as a boundary encoding operator.
+
+Define a projection
+
+\[
+\Pi_H : \mathcal{W} \rightarrow \mathcal{H}
+\]
+
+mapping worldline data $\mathcal{W}$ to horizon microstates $\mathcal{H}$.
+
+Archive density scales with area:
+
+\[
+\rho_A = \frac{dS}{dA}
+\]
+
+Black hole mergers then act as information coarse-graining operations:
+
+\[
+\Pi_{H_{12}} = \mathcal{C}(\Pi_{H_1}, \Pi_{H_2})
+\]
+
+where $\mathcal{C}$ represents entropy-increasing compression.
+
+This reframes gravitational collapse as boundary accumulation rather than interior storage.
+
+% =========================
+\section{Cycle Phase Space and Renormalization}
+
+Cosmic cycles can be interpreted as scale transformations in configuration space.
+
+Let $\Lambda$ denote characteristic scale.
+We consider flow:
+
+\[
+\frac{d\mathcal{T}}{d\ln \Lambda} = \beta(\mathcal{T})
+\]
+
+where $\beta$ is a topology flow function.
+
+A fixed point
+
+\[
+\beta(\mathcal{T}_*) = 0
+\]
+
+represents a persistent cosmological skeleton inherited across cycles.
+
+This suggests cosmic recursion behaves analogously to renormalization group flow.
+
+% =========================
+\section{Standing Cosmic Web Geometry}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.1]
+
+\foreach \x in {0,2,4}{
+\foreach \y in {0,2,4}{
+\fill (\x,\y) circle (2pt);
+}}
+
+\draw (0,0) -- (2,2) -- (4,4);
+\draw (4,0) -- (2,2) -- (0,4);
+\draw (0,2) -- (4,2);
+\draw (2,0) -- (2,4);
+
+\node at (2,-1) {Filament network as standing topology};
+
+\end{tikzpicture}
+\end{center}
+
+% =========================
+\section{Causal Archive Geometry}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+
+\draw (-2,-2) -- (0,0) -- (2,-2);
+\draw (-2,2) -- (0,0) -- (2,2);
+
+\draw (0,0) circle (0.5);
+
+\node at (0,-2.4) {Past};
+\node at (0,2.4) {Future};
+\node at (0,0) {H};
+
+\end{tikzpicture}
+\end{center}
+
+The horizon $H$ acts as a causal boundary where worldlines terminate and archive encoding occurs.
+
+% =========================
 \section{Implications}
 
 \begin{itemize}
